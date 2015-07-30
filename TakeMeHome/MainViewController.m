@@ -160,6 +160,15 @@
 -(IBAction)backToWhite:(UIStoryboardSegue*)segue{ NSLog(@"backToWhite");}
 
 
+- (IBAction)adoptButtonPressed:(id)sender {
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"adopt" bundle:nil];
+    
+    id targetViewController = [storyboard instantiateViewControllerWithIdentifier:@"adopt"];
+    
+    [self presentViewController:targetViewController animated:false completion:nil];
+    
+}
+
 
 
 
