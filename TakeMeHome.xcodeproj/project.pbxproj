@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035CD28D1B664D4100AEC20B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035CD28A1B664D4100AEC20B /* FBSDKCoreKit.framework */; };
+		035CD28E1B664D4100AEC20B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035CD28B1B664D4100AEC20B /* FBSDKLoginKit.framework */; };
+		035CD28F1B664D4100AEC20B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035CD28C1B664D4100AEC20B /* FBSDKShareKit.framework */; };
+		035CD2951B665AE900AEC20B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035CD2941B665AE900AEC20B /* MapKit.framework */; };
+		035CD2971B665AFE00AEC20B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035CD2961B665AFE00AEC20B /* CoreLocation.framework */; };
+		035CD29E1B67597D00AEC20B /* LosePetsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD29D1B67597D00AEC20B /* LosePetsCell.m */; };
+		035CD2A11B67A7AE00AEC20B /* lostMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD2A01B67A7AE00AEC20B /* lostMapViewController.m */; };
+		035CD2A41B67B00A00AEC20B /* LostMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD2A31B67B00A00AEC20B /* LostMainController.m */; };
+		03BD5A651B6142380054F861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BD5A641B6142380054F861 /* main.m */; };
+		03BD5A681B6142380054F861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BD5A671B6142380054F861 /* AppDelegate.m */; };
+		03BD5A6B1B6142380054F861 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BD5A6A1B6142380054F861 /* ViewController.m */; };
+		03BD5A731B6142380054F861 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BD5A711B6142380054F861 /* LaunchScreen.xib */; };
+		03BD5A7F1B6142380054F861 /* TakeMeHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BD5A7E1B6142380054F861 /* TakeMeHomeTests.m */; };
+		03BD5A901B6145880054F861 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BD5A8F1B6145880054F861 /* MainViewController.m */; };
+		03DC79EE1B6555140042E8E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DC79EC1B6555140042E8E2 /* Main.storyboard */; };
+		03DC79F01B6560410042E8E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DC79EF1B6560410042E8E2 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03BD5A791B6142380054F861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03BD5A571B6142380054F861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03BD5A5E1B6142380054F861;
+			remoteInfo = TakeMeHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		035CD28A1B664D4100AEC20B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Framework/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		035CD28B1B664D4100AEC20B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Framework/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		035CD28C1B664D4100AEC20B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Framework/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		035CD2941B665AE900AEC20B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		035CD2961B665AFE00AEC20B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		035CD29C1B67597D00AEC20B /* LosePetsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LosePetsCell.h; sourceTree = "<group>"; };
+		035CD29D1B67597D00AEC20B /* LosePetsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LosePetsCell.m; sourceTree = "<group>"; };
+		035CD29F1B67A7AE00AEC20B /* lostMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lostMapViewController.h; sourceTree = "<group>"; };
+		035CD2A01B67A7AE00AEC20B /* lostMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lostMapViewController.m; sourceTree = "<group>"; };
+		035CD2A21B67B00A00AEC20B /* LostMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostMainController.h; sourceTree = "<group>"; };
+		035CD2A31B67B00A00AEC20B /* LostMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostMainController.m; sourceTree = "<group>"; };
+		03BD5A5F1B6142380054F861 /* TakeMeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeMeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BD5A631B6142380054F861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BD5A641B6142380054F861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03BD5A661B6142380054F861 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03BD5A671B6142380054F861 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03BD5A691B6142380054F861 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03BD5A6A1B6142380054F861 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		03BD5A721B6142380054F861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		03BD5A781B6142380054F861 /* TakeMeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeMeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BD5A7D1B6142380054F861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BD5A7E1B6142380054F861 /* TakeMeHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakeMeHomeTests.m; sourceTree = "<group>"; };
+		03BD5A8E1B6145880054F861 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		03BD5A8F1B6145880054F861 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		03DC79ED1B6555140042E8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03DC79EF1B6560410042E8E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03BD5A5C1B6142380054F861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035CD2971B665AFE00AEC20B /* CoreLocation.framework in Frameworks */,
+				035CD2951B665AE900AEC20B /* MapKit.framework in Frameworks */,
+				035CD28E1B664D4100AEC20B /* FBSDKLoginKit.framework in Frameworks */,
+				035CD28D1B664D4100AEC20B /* FBSDKCoreKit.framework in Frameworks */,
+				035CD28F1B664D4100AEC20B /* FBSDKShareKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BD5A751B6142380054F861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		035CD2931B66596200AEC20B /* Lost */ = {
+			isa = PBXGroup;
+			children = (
+				035CD29C1B67597D00AEC20B /* LosePetsCell.h */,
+				035CD29D1B67597D00AEC20B /* LosePetsCell.m */,
+				035CD29F1B67A7AE00AEC20B /* lostMapViewController.h */,
+				035CD2A01B67A7AE00AEC20B /* lostMapViewController.m */,
+				035CD2A21B67B00A00AEC20B /* LostMainController.h */,
+				035CD2A31B67B00A00AEC20B /* LostMainController.m */,
+			);
+			name = Lost;
+			sourceTree = "<group>";
+		};
+		035CD2981B665B4600AEC20B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				03BD5A691B6142380054F861 /* ViewController.h */,
+				03BD5A6A1B6142380054F861 /* ViewController.m */,
+				03BD5A8E1B6145880054F861 /* MainViewController.h */,
+				03BD5A8F1B6145880054F861 /* MainViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		03BD5A561B6142380054F861 = {
+			isa = PBXGroup;
+			children = (
+				035CD2961B665AFE00AEC20B /* CoreLocation.framework */,
+				035CD2941B665AE900AEC20B /* MapKit.framework */,
+				03BD5A611B6142380054F861 /* TakeMeHome */,
+				03BD5A7B1B6142380054F861 /* TakeMeHomeTests */,
+				03BD5A601B6142380054F861 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03BD5A601B6142380054F861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03BD5A5F1B6142380054F861 /* TakeMeHome.app */,
+				03BD5A781B6142380054F861 /* TakeMeHomeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03BD5A611B6142380054F861 /* TakeMeHome */ = {
+			isa = PBXGroup;
+			children = (
+				035CD28A1B664D4100AEC20B /* FBSDKCoreKit.framework */,
+				035CD28B1B664D4100AEC20B /* FBSDKLoginKit.framework */,
+				035CD28C1B664D4100AEC20B /* FBSDKShareKit.framework */,
+				03BD5A661B6142380054F861 /* AppDelegate.h */,
+				03BD5A671B6142380054F861 /* AppDelegate.m */,
+				035CD2981B665B4600AEC20B /* Home */,
+				035CD2931B66596200AEC20B /* Lost */,
+				03DC79EC1B6555140042E8E2 /* Main.storyboard */,
+				03DC79EF1B6560410042E8E2 /* Images.xcassets */,
+				03BD5A711B6142380054F861 /* LaunchScreen.xib */,
+				03BD5A621B6142380054F861 /* Supporting Files */,
+			);
+			path = TakeMeHome;
+			sourceTree = "<group>";
+		};
+		03BD5A621B6142380054F861 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03BD5A631B6142380054F861 /* Info.plist */,
+				03BD5A641B6142380054F861 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03BD5A7B1B6142380054F861 /* TakeMeHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				03BD5A7E1B6142380054F861 /* TakeMeHomeTests.m */,
+				03BD5A7C1B6142380054F861 /* Supporting Files */,
+			);
+			path = TakeMeHomeTests;
+			sourceTree = "<group>";
+		};
+		03BD5A7C1B6142380054F861 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03BD5A7D1B6142380054F861 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03BD5A5E1B6142380054F861 /* TakeMeHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BD5A821B6142380054F861 /* Build configuration list for PBXNativeTarget "TakeMeHome" */;
+			buildPhases = (
+				03BD5A5B1B6142380054F861 /* Sources */,
+				03BD5A5C1B6142380054F861 /* Frameworks */,
+				03BD5A5D1B6142380054F861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeMeHome;
+			productName = TakeMeHome;
+			productReference = 03BD5A5F1B6142380054F861 /* TakeMeHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03BD5A771B6142380054F861 /* TakeMeHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BD5A851B6142380054F861 /* Build configuration list for PBXNativeTarget "TakeMeHomeTests" */;
+			buildPhases = (
+				03BD5A741B6142380054F861 /* Sources */,
+				03BD5A751B6142380054F861 /* Frameworks */,
+				03BD5A761B6142380054F861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03BD5A7A1B6142380054F861 /* PBXTargetDependency */,
+			);
+			name = TakeMeHomeTests;
+			productName = TakeMeHomeTests;
+			productReference = 03BD5A781B6142380054F861 /* TakeMeHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03BD5A571B6142380054F861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Josh;
+				TargetAttributes = {
+					03BD5A5E1B6142380054F861 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					03BD5A771B6142380054F861 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 03BD5A5E1B6142380054F861;
+					};
+				};
+			};
+			buildConfigurationList = 03BD5A5A1B6142380054F861 /* Build configuration list for PBXProject "TakeMeHome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03BD5A561B6142380054F861;
+			productRefGroup = 03BD5A601B6142380054F861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03BD5A5E1B6142380054F861 /* TakeMeHome */,
+				03BD5A771B6142380054F861 /* TakeMeHomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03BD5A5D1B6142380054F861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DC79F01B6560410042E8E2 /* Images.xcassets in Resources */,
+				03DC79EE1B6555140042E8E2 /* Main.storyboard in Resources */,
+				03BD5A731B6142380054F861 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BD5A761B6142380054F861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03BD5A5B1B6142380054F861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BD5A6B1B6142380054F861 /* ViewController.m in Sources */,
+				03BD5A681B6142380054F861 /* AppDelegate.m in Sources */,
+				035CD2A41B67B00A00AEC20B /* LostMainController.m in Sources */,
+				03BD5A651B6142380054F861 /* main.m in Sources */,
+				03BD5A901B6145880054F861 /* MainViewController.m in Sources */,
+				035CD29E1B67597D00AEC20B /* LosePetsCell.m in Sources */,
+				035CD2A11B67A7AE00AEC20B /* lostMapViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BD5A741B6142380054F861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BD5A7F1B6142380054F861 /* TakeMeHomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03BD5A7A1B6142380054F861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03BD5A5E1B6142380054F861 /* TakeMeHome */;
+			targetProxy = 03BD5A791B6142380054F861 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03BD5A711B6142380054F861 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03BD5A721B6142380054F861 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		03DC79EC1B6555140042E8E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DC79ED1B6555140042E8E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03BD5A801B6142380054F861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03BD5A811B6142380054F861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03BD5A831B6142380054F861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TakeMeHome",
+					"$(PROJECT_DIR)/TakeMeHome/Framework",
+				);
+				INFOPLIST_FILE = TakeMeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03BD5A841B6142380054F861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TakeMeHome",
+					"$(PROJECT_DIR)/TakeMeHome/Framework",
+				);
+				INFOPLIST_FILE = TakeMeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		03BD5A861B6142380054F861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TakeMeHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeMeHome.app/TakeMeHome";
+			};
+			name = Debug;
+		};
+		03BD5A871B6142380054F861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TakeMeHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeMeHome.app/TakeMeHome";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03BD5A5A1B6142380054F861 /* Build configuration list for PBXProject "TakeMeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BD5A801B6142380054F861 /* Debug */,
+				03BD5A811B6142380054F861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BD5A821B6142380054F861 /* Build configuration list for PBXNativeTarget "TakeMeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BD5A831B6142380054F861 /* Debug */,
+				03BD5A841B6142380054F861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BD5A851B6142380054F861 /* Build configuration list for PBXNativeTarget "TakeMeHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BD5A861B6142380054F861 /* Debug */,
+				03BD5A871B6142380054F861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03BD5A571B6142380054F861 /* Project object */;
+}
