@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Index AdoptVC-->
         <scene sceneID="9uh-H2-mJs">
             <objects>
-                <viewController storyboardIdentifier="adopt" id="mWz-2e-tAP" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="adopt" id="mWz-2e-tAP" customClass="indexAdoptVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hhN-Bs-5ws"/>
                         <viewControllerLayoutGuide type="bottom" id="elV-DL-HMd"/>

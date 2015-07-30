@@ -7,10 +7,13 @@
 //
 
 #import "MainViewController.h"
+#import "navigationBtn.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface MainViewController ()<FBSDKLoginButtonDelegate>
+
+
+@interface MainViewController ()<FBSDKLoginButtonDelegate,NavigationBtnObjecterDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *menuButton;
 @property (weak, nonatomic) IBOutlet UIButton *adoptButton;
 @property (weak, nonatomic) IBOutlet UIButton *lostButton;
@@ -27,10 +30,16 @@
 @end
 
 @implementation MainViewController
+{
+    navigationBtn *naviClass;
+}
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    naviClass = [navigationBtn shareInstance];
+    [self NavigationBtnObjecterShoudDisplay:self];
+    [naviClass setDelegate:self];
     
     //隱藏Menu的按鈕
     _adoptButton.hidden=YES;
@@ -41,10 +50,17 @@
     
     //
     self.fbLogOutButton.delegate = self;
-
     
 
     
+}
+-(UIViewController *)attachedViewController
+{
+    return self;
+}
+- (BOOL)NavigationBtnObjecterShoudDisplay:(UIViewController*)VC{
+    naviClass.parentVC = VC;
+    return  true;
 }
 -(void)viewDidAppear:(BOOL)animated
 {
@@ -162,9 +178,7 @@
 
 - (IBAction)adoptButtonPressed:(id)sender {
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"adopt" bundle:nil];
-    
     id targetViewController = [storyboard instantiateViewControllerWithIdentifier:@"adopt"];
-    
     [self presentViewController:targetViewController animated:false completion:nil];
     
 }
