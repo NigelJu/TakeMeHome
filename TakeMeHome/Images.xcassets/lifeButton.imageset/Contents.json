@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "lifeButton Copy.png"
+      "filename" : "lifeButton.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "lifeButton Copy@2x.png"
+      "filename" : "lifeButton@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "lifeButton Copy@3x.png"
+      "filename" : "lifeButton@3x.png"
     }
   ],
   "info" : {

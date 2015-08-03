@@ -12,8 +12,6 @@
 		035CD28F1B664D4100AEC20B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035CD28C1B664D4100AEC20B /* FBSDKShareKit.framework */; };
 		035CD2951B665AE900AEC20B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035CD2941B665AE900AEC20B /* MapKit.framework */; };
 		035CD2971B665AFE00AEC20B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035CD2961B665AFE00AEC20B /* CoreLocation.framework */; };
-		035CD29E1B67597D00AEC20B /* LosePetsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD29D1B67597D00AEC20B /* LosePetsCell.m */; };
-		035CD2A11B67A7AE00AEC20B /* lostMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD2A01B67A7AE00AEC20B /* lostMapViewController.m */; };
 		035CD2A41B67B00A00AEC20B /* LostMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD2A31B67B00A00AEC20B /* LostMainController.m */; };
 		03BD5A651B6142380054F861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BD5A641B6142380054F861 /* main.m */; };
 		03BD5A681B6142380054F861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BD5A671B6142380054F861 /* AppDelegate.m */; };
@@ -51,10 +49,6 @@
 		035CD28C1B664D4100AEC20B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Framework/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		035CD2941B665AE900AEC20B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		035CD2961B665AFE00AEC20B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		035CD29C1B67597D00AEC20B /* LosePetsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LosePetsCell.h; sourceTree = "<group>"; };
-		035CD29D1B67597D00AEC20B /* LosePetsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LosePetsCell.m; sourceTree = "<group>"; };
-		035CD29F1B67A7AE00AEC20B /* lostMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lostMapViewController.h; sourceTree = "<group>"; };
-		035CD2A01B67A7AE00AEC20B /* lostMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lostMapViewController.m; sourceTree = "<group>"; };
 		035CD2A21B67B00A00AEC20B /* LostMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostMainController.h; sourceTree = "<group>"; };
 		035CD2A31B67B00A00AEC20B /* LostMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostMainController.m; sourceTree = "<group>"; };
 		03BD5A5F1B6142380054F861 /* TakeMeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeMeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,10 +107,6 @@
 		035CD2931B66596200AEC20B /* Lost */ = {
 			isa = PBXGroup;
 			children = (
-				035CD29C1B67597D00AEC20B /* LosePetsCell.h */,
-				035CD29D1B67597D00AEC20B /* LosePetsCell.m */,
-				035CD29F1B67A7AE00AEC20B /* lostMapViewController.h */,
-				035CD2A01B67A7AE00AEC20B /* lostMapViewController.m */,
 				035CD2A21B67B00A00AEC20B /* LostMainController.h */,
 				035CD2A31B67B00A00AEC20B /* LostMainController.m */,
 			);
@@ -300,6 +290,7 @@
 				TargetAttributes = {
 					03BD5A5E1B6142380054F861 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = Y82V3U924M;
 					};
 					03BD5A771B6142380054F861 = {
 						CreatedOnToolsVersion = 6.4;
@@ -366,8 +357,6 @@
 				A6D3E7251B6A6F550066DD7B /* navigationBtn.m in Sources */,
 				A6D3E7201B6A6EEE0066DD7B /* CTPopOutMenu.m in Sources */,
 				03BD5A901B6145880054F861 /* MainViewController.m in Sources */,
-				035CD29E1B67597D00AEC20B /* LosePetsCell.m in Sources */,
-				035CD2A11B67A7AE00AEC20B /* lostMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,14 +484,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TakeMeHome",
 					"$(PROJECT_DIR)/TakeMeHome/Framework",
 				);
 				INFOPLIST_FILE = TakeMeHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -510,14 +503,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TakeMeHome",
 					"$(PROJECT_DIR)/TakeMeHome/Framework",
 				);
 				INFOPLIST_FILE = TakeMeHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
