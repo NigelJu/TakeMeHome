@@ -180,6 +180,7 @@
 -(IBAction)backToWhite:(UIStoryboardSegue*)segue{ NSLog(@"backToWhite");}
 
 
+//前往領養寵物
 - (IBAction)adoptButtonPressed:(id)sender {
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"adopt" bundle:nil];
     id targetViewController = [storyboard instantiateViewControllerWithIdentifier:@"adopt"];
