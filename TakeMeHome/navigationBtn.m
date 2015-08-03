@@ -31,13 +31,15 @@
     return self;
 }
 
--(void)setup{
+
+-(void)setCTpopoutMenuItem{
+
     NSMutableArray * items = [NSMutableArray new];
     /*
-    for (int i = 0; i < 6 ; i++) {
-        CTPopoutMenuItem * item = [[CTPopoutMenuItem alloc]initWithTitle:[NSString stringWithFormat:@"item%d",i] image:[UIImage imageNamed:nil]];
-        [items addObject:item];
-    }
+     for (int i = 0; i < 6 ; i++) {
+     CTPopoutMenuItem * item = [[CTPopoutMenuItem alloc]initWithTitle:[NSString stringWithFormat:@"item%d",i] image:[UIImage imageNamed:nil]];
+     [items addObject:item];
+     }
      */
     
     
@@ -58,23 +60,40 @@
     
     
     self.popMenu = [[CTPopoutMenu alloc]initWithTitle:@"點擊大頭兩下回到首頁" message:nil items:items];
+    self.popMenu.delegate = self;
+
+}
+
+-(void)setNaviBtnSetting{
     self.naviBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 20, 50, 50)];
     
     
-    UIImage *img = [UIImage imageNamed:@"img.png"];
-    [self.naviBtn setImage:img forState:UIControlStateNormal];
+    UIImage *naviBtnImg = [UIImage imageNamed:@"img.png"];
+    [self.naviBtn setImage:naviBtnImg forState:UIControlStateNormal];
     [self.naviBtn addTarget:self action:@selector(showGrid) forControlEvents:UIControlEventTouchUpInside];
     
-    //[self.naviBtn addTarget:self.delegate action:@selector(buttonDidPress) forControlEvents:UIControlEventTouchUpInside];
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]
+                                          initWithTarget:self
+                                          action:@selector(dragTheObj:)];
     
-    
-    
-    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragTheObj:)];
     [self.naviBtn addGestureRecognizer:panGesture];
     
+    UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressedObj:)];
+    [self.naviBtn addGestureRecognizer:longGesture];
+
+}
+
+- (void)longPressedObj:(UILongPressGestureRecognizer*)recognizer{
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    id targetViewController = [storyboard instantiateViewControllerWithIdentifier:@"mainView"];
+    [_parentVC presentViewController:targetViewController animated:false completion:nil];
+}
+
+-(void)setup{
+
+    [self setCTpopoutMenuItem];
+    [self setNaviBtnSetting];
     
-    //    [self.view addSubview:self.naviBtn];
-    self.popMenu.delegate = self;
 }
 
 -(void)setDelegate:(id<NavigationBtnObjecterDelegate>)delegate
@@ -87,24 +106,22 @@
     
     switch (index) {
         case 0: //走失
-            //NSLog(@"%d",index);
         {
             UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             id targetViewController = [storyboard instantiateViewControllerWithIdentifier:@"lost"];
             [_parentVC presentViewController:targetViewController animated:false completion:nil];
-            
-        }
             break;
+        }
+            
         case 1: //領養
         {
-            //NSLog(@"%d",index);
-           
             UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"adopt" bundle:nil];
             id targetViewController = [storyboard instantiateViewControllerWithIdentifier:@"adopt"];
             [_parentVC presentViewController:targetViewController animated:false completion:nil];
+            break;
         }
 
-            break;
+            
         case 2: //附近生活
             NSLog(@"%d",index);
             break;
@@ -201,9 +218,7 @@
 }
 
 
--(void)buttonDidPress{
-    NSLog(@"inBtnClass_btnDidPress");
-}
+
 
 -(void)dealloc
 {

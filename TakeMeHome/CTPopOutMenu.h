@@ -33,8 +33,9 @@ typedef enum : NSUInteger {
 @end
 
 @protocol CTPopoutMenuDelegate <NSObject>
-
 -(void)menu:(CTPopoutMenu*)menu willDismissWithSelectedItemAtIndex:(NSUInteger)index;
+
+@optional
 -(void)menuwillDismiss:(CTPopoutMenu *)menu ;
 
 @end

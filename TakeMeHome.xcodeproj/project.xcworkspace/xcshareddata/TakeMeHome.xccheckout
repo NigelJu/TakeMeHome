@@ -10,8 +10,6 @@
 	<string>TakeMeHome</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>02E1A84573529011EF3E1147FBEF880E3FE665BA</key>
-		<string>https://github.com/NigelJu/trytryTakeMeHome.git</string>
 		<key>C8B3052B88A0F53B85D219306A44D6995AA13D2B</key>
 		<string>https://github.com/NigelJu/TakeMeHome</string>
 	</dict>
@@ -19,8 +17,6 @@
 	<string>TakeMeHome.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>02E1A84573529011EF3E1147FBEF880E3FE665BA</key>
-		<string>../../..</string>
 		<key>C8B3052B88A0F53B85D219306A44D6995AA13D2B</key>
 		<string>../..</string>
 	</dict>
@@ -32,14 +28,6 @@
 	<string>C8B3052B88A0F53B85D219306A44D6995AA13D2B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>02E1A84573529011EF3E1147FBEF880E3FE665BA</string>
-			<key>IDESourceControlWCCName</key>
-			<string></string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
